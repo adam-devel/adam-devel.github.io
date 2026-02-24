@@ -23,3 +23,7 @@ In the terminlal we gave `flex` the file and it generated a tokenizer based on i
 ```shell
 flex tp1.l
 ```
+
+---
+
+These lab sessions are part of the [[Compiler Construction Course]], which belongs to the [[Compilation & Tests Unit]] of the [[4th Semester]] in the [[GLSI Major]] at the [[Higher Institute of Computer Science of Mahdia]] 
