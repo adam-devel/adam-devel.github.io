@@ -65,10 +65,10 @@ export default {
       recentNotes: "Notes récentes",
       lastFewNotes: ({ count }) => `Les dernières ${count} notes`,
     },
-    error: {
-      title: "Introuvable",
-      notFound: "Cette page est soit privée, soit elle n'existe pas.",
-      home: "Retour à la page d'accueil",
+    notFound: {
+      title: "Cette page est privée!",
+      message: "Cette page est privée, soit parce qu’elle n’est pas encore prête à être publiée, soit parce qu’elle est personnelle",
+      returnHome: "Retour à la page d'accueil",
     },
     folderContent: {
       folder: "Dossier",

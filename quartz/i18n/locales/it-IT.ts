@@ -66,10 +66,10 @@ export default {
       recentNotes: "Note recenti",
       lastFewNotes: ({ count }) => (count === 1 ? "Ultima nota" : `Ultime ${count} note`),
     },
-    error: {
+    notFound: {
       title: "Non trovato",
-      notFound: "Questa pagina è privata o non esiste.",
-      home: "Ritorna alla home page",
+      message: "Questa pagina è privata o non esiste.",
+      returnHome: "Ritorna alla home page",
     },
     folderContent: {
       folder: "Cartella",

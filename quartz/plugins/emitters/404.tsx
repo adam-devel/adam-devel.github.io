@@ -33,7 +33,7 @@ export const NotFoundPage: QuartzEmitterPlugin = () => {
 
       const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
       const path = url.pathname as FullSlug
-      const notFound = i18n(cfg.locale).pages.error.title
+      const notFound = i18n(cfg.locale).pages.notFound.title
       const [tree, vfile] = defaultProcessedContent({
         slug,
         text: notFound,

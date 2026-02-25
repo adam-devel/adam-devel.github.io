@@ -68,10 +68,10 @@ export interface Translation {
       recentNotes: string
       lastFewNotes: (variables: { count: number }) => string
     }
-    error: {
+    notFound: {
       title: string
-      notFound: string
-      home: string
+      message: string
+      returnHome: string
     }
     folderContent: {
       folder: string
