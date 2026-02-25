@@ -1,8 +1,6 @@
 ---
 publish: true
 ---
-
-
 The standards history for the [[C language]]
 
 # K&R C (C78)

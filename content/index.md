@@ -2,15 +2,13 @@
 publish: true
 title: Welcome !
 ---
-I write course notes, see [[compiler construction]], [[Software Testing]], [[Search Engines & Indexing]], [[Web]], [[Database Administration]], [[Artificial Intelligence]], [[IT Law]], [[AGILE Project]], [[Advanced Python]], [[IoT]].
+I write course notes: [[Compiler Construction Course|Compiler Construction]],  [[Software Testing Course|Software Testing]],  [[Search Engines & Indexing Course|Search Engines & Indexing]],  [[Web Course|Web]],  [[Database Administration Course|Database Administration]],  [[Artificial Intelligence Course|Artificial Intelligence]],  [[IT Law Course|IT Law]],  [[AGILE Project]],  [[Advanced Python Course|Advanced Python]],  [[IoT Course]]. → for more on education, see [[Education]].
 
-For more on education, see [[Education]].
+I write about my interests: [[C Language Standards]], [[Formal Grammar]], [[Formal Language]], [[Linux]], [[Neovim]].  %%for more use the search functionaluity%%
 
-Please do use the search functionality.
+I help [[Mapping the digital space]].
 
-I help [[mapping the digital space]].
-
-My current interests/thoughts:
-
-- [[Data vs Process, is vs do]]
+I muse about:
 - [[Context around programs]]
+- [[Data vs Process, is vs do]]
+- [[Language]]

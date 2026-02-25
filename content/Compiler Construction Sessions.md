@@ -2,19 +2,32 @@
 publish: true
 ---
 
+%% no enough materials to warrant this heading
+
+**Materials/Resources**
+
+1. [[isima - compilation - tp1 intiation into flex and lexical analysis.pdf|intiation into flex and lexical analysis]]
+%%
+
+See the summary on [[Compiler Construction, Sessions Summary]]
+
 # Session 1
 
-I was present ! we got [[isima - compilation - tp1 analyse lexicale.pdf|this pdf]] titled "lexical analysis".
+We got [[isima/isima - compilation - tp1 intiation into flex and lexical analysis.pdf|this pdf]] titled "TP1: intiation into flex and lexical analysis" from the professor through a USB drive.
 
-We installed `flex`, `bison`, `gcc` and "Dev C++":
-- "Dev C++" is an editor for writing text
-- `gcc` is a compiler for turning C code into executable programs
-- `flex` reads a description from `.l` file then generates C code. the C code makes a lexer following the description in the `.l` file.
-	- a lexer is a program that scans text input and breaks it up into small parts called tokens.
-- `bison` reads a grammar description from a `.y` file then generates C code. the C code makes a parser following the grammar rules in the `.y` file.
-	- a parser is a program that takes tokens from a lexer and tries to builds a tree based on the grammar. it also report syntax errors when the input does not follow the grammar.
+As instructed by the pdf, we installed `flex`, `bison`, `gcc` and "Dev C++"
 
-I personally prefer using neovim as my editor, and i already had flex, bison and gcc installed so i didn't have to do anything :)
+> useful infornation that isn't part of the session:
+> - "Dev C++" is an editor for writing text
+> - `gcc` is a compiler for transforming C code into executable programs
+> - `flex` reads a description from a `.l` file then generates C code. the C code makes a lexer according the description in the `.l` file.  
+>   a lexer is a program that scans text input and breaks it up into small parts called tokens.
+> - `bison` reads a grammar description from a `.y` file then generates C code. the C code makes a parser according the grammar rules in the `.y` file.  
+>   a parser is a program that reads tokens from a lexer and tries to builds a tree based on a grammar. it also report syntax errors when the input does not follow the grammar.
+>
+> ![[diagrams/isima - compiler construction - lab sessions - flex and bison.png]]
+
+I personally prefer using neovim as my editor, and i already had `flex`, `bison` and `gcc` installed so i didn't have to do anything :)
 
 We copied [[isima/isima - compilation - tp1 - demo.txt|this code]] (from the pdf), saved it in a file named `tp1.l` then we opened the terminal (powershell in windows).
 
@@ -24,6 +37,16 @@ In the terminlal we gave `flex` the file and it generated a tokenizer based on i
 flex tp1.l
 ```
 
+The code in `tp1.l` describes a lexer that counts the number of vowels, consonants and punctuation.
+
+# Session 2
+
+I wasn't present
+
 ---
 
-These lab sessions are part of the [[Compiler Construction Course]], which belongs to the [[Compilation & Tests Unit]] of the [[4th Semester]] in the [[GLSI Major]] at the [[Higher Institute of Computer Science of Mahdia]] 
+> [!NOTE] Relations
+> These lab sessions are part of the [[Compiler Construction Course]] in the [[Compilation & Tests Module]] of the [[Education]] of a computer science major at ISIMA
+
+>[!NOTE] Template
+>This note is derived from the template [[Sessions Template]]

@@ -1,12 +1,18 @@
 ---
 publish: true
 ---
-The lectures vs the lab work are very different: the lectures are about language theory and automata, whereas the lab work is about using `flex` and `bison` for making parsers.
+A compiler is a program that transform from one formal language to another formal language. 
 
-<!-- [[Techniques des compilation Lecture sessions]] -->
-I haven't been present in a lecture yet, so no notes for the moment.
-For the lab work see [[Compiler Construction Sessions]] for the raw journaling, see [[Compiler Construction Summary]] for the summary.
+**Lectures**
+
+The lectures focus on the use of formal language theory and automata theory for modeling languages.  I haven't been present in a lecture yet, so I don't have notes on [[Compiler Construction Lectures]]
+
+**Lab Sessions**
+
+During lab sessions we make compilers using `flex` and `bison`. see the [[Compiler Construction, Sessions Summary|summary]] for a summary. and see [[Compiler Construction Sessions]] to read the raw journaling of sessions I am present at.
 
 ---
 
-This subject is part of the unit [Compilation & Tests Unit](Compilation%20&%20Tests%20Unit.md) which is worth 5 credit points and it has a 2.5 coefficient.
+This course belongs to the [[Compilation & Tests Module]] of the [[Education]] (worth 5 credit points, weighed by 2.5 coefficient) in the GLSI major at ISIMA
+
+This note follows the template [[Course Template]]
