@@ -1,0 +1,55 @@
+direction: down
+
+client: PC {
+  browser: Chrome {
+    explaination: |md
+      Envoie une requête au serveur\
+      web et attend une réponse.  
+
+      La requête demande une page\
+      spécifique (par exemple : localhost/page.php).
+
+      La requête inclut des informations\
+      supplémentaires, comme le nom\
+      du navigateur.
+    |
+  }
+}
+
+server: Serveur {
+  apache: Apache {
+    explaination: |md
+      Lit la requête et trouve le fichier\
+      correspondant : par exemple page.php.
+
+      Si c’est un fichier PHP, il envoie\
+      la requête au moteur PHP et attend\
+      que PHP retourne du HTML, puis envoie\
+      le HTML au client.
+    |
+  }
+  php: Moteur PHP {
+    explaination: |md
+      Lit et exécute le code PHP.\
+      Les variables de la requête sont\
+      mises à disposition du script.
+
+      Le code PHP peut interroger le serveur\
+      MySQL.
+    |
+  }
+  mysql: MySQL {
+    explaination: |md
+      Exécute les requêtes SQL et\
+      retourne les résultats.
+    |
+  }
+
+  apache -> php: Requête : page.php
+  php -> apache: Retour : HTML
+  php -> mysql: Requête SQL
+  mysql -> php: Résultat
+}
+
+client.browser -> server.apache: Requête HTTP : page.php
+server.apache -> client.browser: Réponse HTTP : HTML

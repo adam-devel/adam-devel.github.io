@@ -6,6 +6,8 @@ SEARCH_DIR="$HOME/my-notes"
 DEST_DIR="./content"
 mkdir -p "$DEST_DIR"
 
+cp -rf "$SEARCH_DIR/attachements" "$DEST_DIR/"
+
 # Find matching markdown files and copy them
 rg --multiline --multiline-dotall -l \
   -P '^---\s*\n+.*^publish:\s*"?true"?\s*$.*\n---' "$SEARCH_DIR" --glob '*.md' | while read -r file; do

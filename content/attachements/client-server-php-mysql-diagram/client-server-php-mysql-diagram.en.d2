@@ -1,0 +1,55 @@
+direction: down
+
+client: PC {
+  browser: Chrome {
+    explaination: |md
+      Sends a request to the website\
+      server and waits for a response.  
+
+      The request asks for a specific\
+      page  (e.g., localhost/page.php).
+
+      The request includes extra\
+      information, such as the name\
+      of the browser
+    |
+  }
+}
+
+server: Server {
+  apache: Apache {
+    explaination: |md
+      Reads the request and finds\
+      the file: page.php for example.
+
+      If it's a PHP file, sends the\
+      request to PHP Engine and waits\
+      for PHP to return HTML then sends\
+      the HTML back to the client.
+    |
+  }
+  php: PHP Engine {
+    explaination: |md
+      Reads and executes the PHP code.\
+      Request variables are made available\
+      to the script.
+
+      The php code may query the MySQL\
+      server
+    |
+  }
+  mysql: MySQL {
+    explaination: |md
+      Executes SQL queries and\
+      returns results.
+    |
+  }
+
+  apache -> php: Request: page.php
+  php -> apache: Return: HTML
+  php -> mysql: SQL Query
+  mysql -> php: Query Result
+}
+
+client.browser -> server.apache: HTTP Request: page.php
+server.apache -> client.browser: HTTP Response: HTML
