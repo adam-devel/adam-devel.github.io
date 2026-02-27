@@ -1,15 +1,14 @@
 ---
 publish: true
 ---
-
 Modules and courses i am taking during the 4th semester of the Computer Science program at ISIMA, specializing in GLSI.
 
 [[Compilation & Tests Module]] is worth ==5 credit== points and is weighed by a ==coefficient of 2.5==.
 
-- [Compiler Construction Course](Compiler%20Construction%20Course.md)
-- [Test logiciel](Test%20logiciel)
+- [Compiler construction course](Compiler%20construction%20course.md)
+- [Software testing course](Software%20testing%20course.md)
 
-[[Indexation et Web Module]] is worth ==5 credit== points and is weighed by a ==coefficient of 2.5==.
+[[Indexation and Web Module]] is worth ==5 credit== points and is weighed by a ==coefficient of 2.5==.
 
 - [[Search Engines & Indexing Course]]
 - [[Web Course]]
@@ -41,7 +40,7 @@ See the  [[ISIMA Course Plan for GLSI]] for the next and previous semesters.
 - [ISIMA 3rd Semester](ISIMA%203rd%20Semester.md) for my old notes
 - [Education in Tunisia](Education%20in%20Tunisia.md)
 - [Higher Institute of Computer Science of Mahdia](Higher%20Institute%20of%20Computer%20Science%20of%20Mahdia.md)
-- [[ISIMA Sessions]]
+- [[Course Sessions]]
 
 
 

@@ -14,8 +14,6 @@ During lab sessions we make compilers using `flex` and `bison`. see the [[Compil
 
 ---
 
-this course is part of the module [[Compilation & Tests Module|compilation & tests]], worth 5 credit points, weighed by a coefficient of 2.5.
+> [!NOTE] This course is part of the [[Education|4th semester]] module [[Compilation & Tests Module|compilation & tests]], which is worth 5 credit points, and weighed by a coefficient of 2.5.
 
-This course belongs to the (bar unit) of the (xth semester), worth y credit points, weighed by a coefficient of z in the (baz major) at the (qux university).
-
-This note follows the template [[Course Template]]
+> [!NOTE] This note follows the template [[Course Template]]

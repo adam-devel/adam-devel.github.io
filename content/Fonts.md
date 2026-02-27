@@ -33,7 +33,7 @@ here's a list of modern Arabic fonts:
 + Lemonada
 + Noto Kufi Arabic
 
-More [[Modern Arabic Fonts (Fixme)]]
+More [[Modern Arabic Fonts (Fix)]]
 
 # Display
 

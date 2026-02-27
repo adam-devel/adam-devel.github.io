@@ -13,7 +13,7 @@ See the summary on [[Compiler Construction, Sessions Summary]]
 
 # Session 1
 
-We got [[isima/isima - compilation - tp1 intiation into flex and lexical analysis.pdf|this pdf]] titled "TP1: intiation into flex and lexical analysis" from the professor through a USB drive.
+We got [[isima/isima - compilation - tp1 intiation into flex and lexical analysis.pdf|this pdf]][^1] titled "TP1: intiation into flex and lexical analysis" from the professor through a USB drive.
 
 As instructed by the pdf, we installed `flex`, `bison`, `gcc` and "Dev C++"
 
@@ -43,12 +43,16 @@ The code in `tp1.l` describes a lexer that counts the number of vowels, consonan
 
 I wasn't present
 
+# Session 3
+
 ---
 
 > [!NOTE] Relations
-> These lab sessions are part of the [[Compiler Construction Course|compiler construction course]], which is part of the [[Compilation & Tests Module|compilation & tests module]].
+> These lab sessions are part of the [[Compiler construction course|compiler construction course]], which is part of the [[Compilation & Tests Module|compilation & tests module]].
 > 
 > Taught during the 4th semester of the GLSI program of ISIMA.
 
 >[!NOTE] Template
 >This note is derived from the template [[Sessions Template]]
+
+[^1]: https://files.catbox.moe/6xwgz0.pdf
