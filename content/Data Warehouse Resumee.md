@@ -5,11 +5,12 @@ publish: true
 | Entrepôt des données / Data Warehouse                                                       | Not entrepôt des données / Not Data Warehouse        |
 | ------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
 | OLAP, Décisionnelle, Analytique, Multidimensionnelle, sujets orientée, Pour non-Développeur | OLTP, Opérationnelle, Relationnel, Pour Développeurs |
+
 # Structure
 
-Un entrepôt de donnée est structurée en terme des (1) ==Dimensions==, et des (2) ==Faits==. registrée sur des tables des dimensions et des tables des fait.
+Un entrepôt de données est structuré en termes des (1) ==Dimensions== et des (2) ==Faits==, enregistrés sur des tables de dimensions et des tables de faits.
 
-(1) Un dimension exprime un sujet, par exemple: un personne, un produit, etc..
+(1) Une dimension exprime un sujet, par exemple : une personne, un produit, etc.
 
 | PERSON | 🔑 id | name  | birth date |
 | ------ | ----- | ----- | ---------- |
@@ -25,11 +26,11 @@ Un entrepôt de donnée est structurée en terme des (1) ==Dimensions==, et des 
 |         | 2     | PS4           |
 |         | …     | …             |
 
-(2) un fait est un couple qui contient:
-- **point d'intersection des dimensions**: par exemple, le table de faits "un ==personne== achète un ==produit==" est un table dont les dimensions "personne" et "produit" intersect.
-- **des mesures**: par exemple, pour le fait "un ==personne== achète un ==produit==" on peut mesure:
-	- "combient de la produit cette person a achète ?"
-	- " combien cette personne a payée pour l'achat de produit ?"
+(2) Un fait est un couple qui contient :
+- **Point d'intersection des dimensions** : par exemple, la table de faits "une ==personne== achète un ==produit==" est une table dont les dimensions "personne" et "produit" s'intersectent.
+- **Des mesures** : par exemple, pour le fait "une ==personne== achète un ==produit==" on peut mesurer :
+  - "Combien de ce produit cette personne a-t-elle acheté ?"
+  - "Combien cette personne a-t-elle payé pour l'achat de ce produit ?"
 
 | ACHAT | person🔗 | product🔗 | nombre | coût |
 | ----- | -------- | --------- | ------ | ---- |
@@ -37,6 +38,6 @@ Un entrepôt de donnée est structurée en terme des (1) ==Dimensions==, et des 
 |       | 0        | 1         | 2      | 1200 |
 |       | …        | …         | …      | …    |
 
-Cette table de fait contiene les faits:
-- "==Ali==" a achète un "==delle laptop==" un ==seule== fois a coûte de ==1000dt==
-- "==John==" a achète ==deux== "==Samsung phone==" a coûte de ==1200dt==
+Cette table de faits contient les faits :
+- "==Ali==" a acheté un "==Dell Laptop==" une ==seule== fois et a ==payé== ==1000 dt==
+- "==John==" a acheté ==deux== "==Samsung Phone==" et a ==payé== ==1200 dt==
