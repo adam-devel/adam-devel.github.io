@@ -5,11 +5,10 @@ publish: true
 > [!WARNING]
 > Résumée incomplet
 
-# Vocabulaire associé
+# Vocabulaire et définitions
 
-* OLAP
+* OLAP - On Line Analytical Processing
     * Analytique / Multidimensionnel / Orienté sujets
-    * Utilisé sur le domaine d'informatique décisionnelle et de Business Intelligence (BI)
     * Utilisé par les analystes, décideurs et managers
     * Utilisé sur les DSS – Decision Support System
     * Caractérisé par
@@ -18,9 +17,9 @@ publish: true
         * Données généralement non modifiées
         * Interrogations non régulières (ad hoc)
 
-* OLTP
+* OLTP - On Line Transactional Processing
     * Transactionnel / Opérationnel / Orienté applications
-    * Utilisé sur l’informatique de production
+    * Utilisé sur l'informatique de production
     * Utilisé sur les systèmes opérationnels
     * Utilisé par les développeurs et leurs applications
     * Basé sur des SGBD relationnels (Oracle, SQL, etc.)
@@ -29,20 +28,34 @@ publish: true
         * Données distribuées et hétérogènes
         * Modifications fréquentes (INSERT, UPDATE, DELETE)
         * Transactions répétitives et planifiées
-        * cohérence / intégrité des données
+        * Cohérence / intégrité des données
         * Accès concurrent et en temps réel
         * Données volatiles (évoluent rapidement)
 
-* Dimension / axe d’analyse / contexte / le qui, quoi, quand, où
-* Fait / événement mesurable / transaction
+### SID et BI
+
+* **Data mining**: utilisation des technologies analytiques pour déceler des tendances dans des données volumineuses
+* **Reporting**: synthèse des informations sur une période donnée, destiné aux directeurs de services, offrant une vue d'ensemble de l'activité
+* **Tableau de bord**: présente les indicateurs de performance clés (KPI) à travers une série de graphiques
+    * Indicateurs essentiels en temps réel pour piloter
+    * Destiné aux équipes métier et leurs responsables
+
+## Entrepôt de données (Data Warehouse)
+
+* Un entrepôt de données est une BD à des fins d'analyse
+* **Dimension** = Axe d'analyse = Contexte = Le qui, quoi, quand, où
+* **Fait** = événement mesurable = transaction
 
 # Chaîne décisionnelle
 
-1. Collection des données
-2. ETL - Extract, Transform, Load
-3. Stockage
-4. Analyse
-5. Restitution
+1. Collecte des données: extraction depuis des bases de données ou des fichiers plats (CSV, XML, ASCII, etc.).
+2. ETL:
+   - Extraction: récupération des données
+   - Transformation: nettoyage, validation, formatage, suppression des doublons et valeurs aberrantes
+   - Chargement: intégration des données dans l'entrepôt
+3. Stockage: choisir manière de stocker la donnée: schéma en étoile, schéma en flocon
+4. Analyse multidimensionnelle: structurer les données selon plusieurs axes, pour faciliter l'exploration et l'analyse (ex: la technologie analytique "Cube OLAP")
+5. Restitution: visualisation et exploitation des données via rapports et tableaux de bord.
 
 # Structure d'un entrepôt de données
 
