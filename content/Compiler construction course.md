@@ -2,7 +2,7 @@
 publish: true
 ---
 
-A compiler is a program that transform from one formal language to another formal language. 
+A compiler is a program that transform from one formal language to another formal language. for example `gcc` is a compiler that transforms "C code" into "Machine Code".
 
 **Lectures**
 

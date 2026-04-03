@@ -11,11 +11,12 @@ I write course notes — [[Compiler construction course|Compiler Construction]],
 
 I maintain curated lists of apps, books, services, libraries, and other resources.
 
-- [[Version control systems]], [[Password Managers]], [[E-book Reader]]
+- [[Android Dotfiles]]
+- [[Version control systems]]
 - [[JavaScript Runtimes]]
 - [[Fonts]]
 	- [[Programming Fonts]]
-	- [[Modern Arabic Fonts (Fix)]]
+	- [[Modern Arabic Fonts (Fixme)]]
 
 this is part of a bigger trend I have identified and called [[Mapping the digital space]]
 
@@ -30,7 +31,6 @@ I muse about interests I fall into curiosity with — [[Context around programs]
 ---
 
 Note taking conventions:
-- **Polish**: Notes that are ready but need some clean up/polish identify as such by referencing the note [[Polish]]
-- **Dump**: Clean/Ready notes may have an accompanying messy note for accumulating thoughts, it's a buffer/inbox/staging area for content that may later be transferred to the clean version of the note. such notes are named by appending "(Dump)" to the bbasename of the original note
-* **Merge**: I often write about the same topic on various notes. when i discover such notes, i reference the note Merge in a sentence explaining what notes to merge into. later on, i can just visit the Merge note to see all the notes linking back to it.
-* **Relate**: if i wish to connect one note with another, I will mention the note [[Relate]] in a setence: [[relate]]s with foo.
+- by default, notes are incomplete, thus by default the template [[templates/Default Template|note template]] is used.
+- at some point the note matures enough to have the default callout removed.
+- published notes may have an accompanying private dirty note that serves as a buffer/inbox/staging area for piling up thoughts that may later be imtegrated cleanly to the clean note. such notes are named by appending "(pile)" to the basename

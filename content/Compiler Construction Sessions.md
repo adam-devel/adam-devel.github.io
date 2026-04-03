@@ -45,6 +45,8 @@ I wasn't present
 
 # Session 3
 
+Just sat on the chair for 40 minutes
+
 ---
 
 > [!NOTE] Relations
