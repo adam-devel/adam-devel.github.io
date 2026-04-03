@@ -1,7 +1,6 @@
 ---
 publish: true
 ---
-
 > [!WARNING]
 > Résumée incomplet
 
@@ -77,6 +76,9 @@ Un Data mart/Magasin de données: sous-ensemble d'un data warehouse, destiné à
 4. Analyse multidimensionnelle: structurer les données selon plusieurs axes, pour faciliter l'exploration et l'analyse (ex: la technologie analytique "Cube OLAP")
 5. Restitution: visualisation et exploitation des données via rapports et tableaux de bord.
 
+> [!INFO]
+> SID signifie "Système d’Information Décisionnel"
+> BI signifie "Business Intelligence"
 # Modélisation Entité-association
 
 Entité-association est adaptée au traitement de transactions, mais souffre de
@@ -150,9 +152,10 @@ Cette table contient les faits:
 
 # Mesures
 
+peut être:
 * additive sur tout les dimensions
-* semi-additive ...
-* non-additive ...
+* semi-additive (sur quelques dimensions)
+* non-additive sur aucune dimensions
 
 # Dimensions
 
@@ -162,5 +165,5 @@ Cette table contient les faits:
 * Dans un hierarchy, les paramètres organisés au degré de détail: de plus générale a plus fin 
 * Membre: une valeur distincte d'un niveau
 
-On Écrit: `Dimension.Level1.Level2.Level3....LevelN.Member`
+=> `Dimension > Niveau > Membre`
 
