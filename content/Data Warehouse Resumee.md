@@ -2,35 +2,55 @@
 publish: true
 ---
 
-| Entrepôt des données / Data Warehouse                                                       | Not entrepôt des données / Not Data Warehouse        |
-| ------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| OLAP, Décisionnelle, Analytique, Multidimensionnelle, sujets orientée, Pour non-Développeur | OLTP, Opérationnelle, Relationnel, Pour Développeurs |
+> [!WARN]
+> Résumée incomplet
 
-# Structure
+# Vocabulaire associé
 
-Un entrepôt de données est structuré en termes des (1) ==Dimensions== et des (2) ==Faits==, enregistrés sur des tables de dimensions et des tables de faits.
+* OLAP ≃ Décisionnel ≃ Analytique ≃ Multidimensionnel ≃ Orienté sujets ≃ Accessible aux non-développeurs 
+* OLTP ≃ Opérationnel ≃ Transactionnel ≃ Relationnel ≃ Orienté applications ≃ Utilisé par les développeurs
+* Dimension ≃ axe d’analyse ≃ context ≃ le qui / quoi / quand / où
+* Fait ≃ événement mesurable ≃ transaction
 
-(1) Une dimension exprime un sujet, par exemple : une personne, un produit, etc.
+# Structure d'un entrepôt de données
 
-| PERSON | 🔑 id | name  | birth date |
-| ------ | ----- | ----- | ---------- |
-|        | 0     | John  | 03/11/1989 |
-|        | 1     | Marry | 08/01/2002 |
-|        | 2     | Ali   | 08/01/1994 |
-|        | …     | …     | …          |
+Un entrepôt de données est organisé autour de deux concepts principaux: ==les dimensions== et ==les faits==.  
+Ces éléments sont stockés respectivement dans des **tables de dimensions** et des **tables de faits**.
 
-| PRODUCT | 🔑 id | name          |
-| ------- | ----- | ------------- |
-|         | 0     | Dell Laptop   |
-|         | 1     | Samsung Phone |
-|         | 2     | PS4           |
-|         | …     | …             |
+Une **dimension** représente un un sujet , par exemple: une personne, un produit, une date, etc.
 
-(2) Un fait est un couple qui contient :
-- **Point d'intersection des dimensions** : par exemple, la table de faits "une ==personne== achète un ==produit==" est une table dont les dimensions "personne" et "produit" s'intersectent.
-- **Des mesures** : par exemple, pour le fait "une ==personne== achète un ==produit==" on peut mesurer :
-  - "Combien de ce produit cette personne a-t-elle acheté ?"
-  - "Combien cette personne a-t-elle payé pour l'achat de ce produit ?"
+### Exemple : Dimension PERSON
+
+| 🔑 id | name  | birth date |
+| ----- | ----- | ---------- |
+| 0     | John  | 03/11/1989 |
+| 1     | Mary  | 08/01/2002 |
+| 2     | Ali   | 08/01/1994 |
+| …     | …     | …          |
+
+### Exemple : Dimension PRODUCT
+
+| 🔑 id | name          |
+| ----- | ------------- |
+| 0     | Dell Laptop   |
+| 1     | Samsung Phone |
+| 2     | PS4           |
+| …     | …             |
+
+---
+
+Un fait est un couple qui contient:
+
+1. **Point d'intersection des dimensions**  
+   Exemple: *"Ali a acheté un Dell Laptop"*  
+   → Intersection des dimensions **Personne** et **Produit**
+
+2. **Des mesures**
+   Par exemple:
+   - Quantité achetée
+   - Montant payé
+
+### Exemple : Table de faits ACHAT
 
 | ACHAT | person🔗 | product🔗 | nombre | coût |
 | ----- | -------- | --------- | ------ | ---- |
@@ -38,6 +58,5 @@ Un entrepôt de données est structuré en termes des (1) ==Dimensions== et des 
 |       | 0        | 1         | 2      | 1200 |
 |       | …        | …         | …      | …    |
 
-Cette table de faits contient les faits :
-- "==Ali==" a acheté un "==Dell Laptop==" une ==seule== fois et a ==payé== ==1000 dt==
-- "==John==" a acheté ==deux== "==Samsung Phone==" et a ==payé== ==1200 dt==
+- ==Ali== (person 2) a acheté ==x1== ==Dell Laptop== (product 0) et a payé ==1000 dt==
+- ==John== (person 0)a acheté ==x2== ==Samsung Phones== (product 1) et a payé ==1200 dt==
