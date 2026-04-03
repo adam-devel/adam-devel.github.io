@@ -37,6 +37,9 @@ OLAP (On Line Analytical Processing) offre accès ==rapide==, ==consistant== et 
 * Utilisé par les DSS – Decision Support System
 
 # Business Intelligence (BI)
+
+l'application des principes OLAP par l'entreprise pour transformer les données brutes en informations exploitables et faciliter la prise de décision
+
 * Data mining: utilisation des technologies analytiques pour déceler des tendances dans des données volumineuses
 
 * Reporting: synthèse des informations sur une période donnée, destiné aux directeurs de services, offrant une vue d'ensemble de l'activité
@@ -47,19 +50,21 @@ OLAP (On Line Analytical Processing) offre accès ==rapide==, ==consistant== et 
 
 # Entrepôt de données (Data Warehouse)
 
-Un entrepôt de données est collection de données orientées sujet, intégrées, non volatiles et historisées
+Un entrepôt de données est une collection de données orientées sujet, intégrées, non volatiles et historisées
 
-* Data mart/Magasin de données: sous-ensemble d'un data warehouse, destiné à un service spécifique (ex: marketing, finance)
-* **Sujet** = Theme
-* **Dimension** = Axe d'analyse = Contexte = Le qui, quoi, quand, où
-* **Fait** = événement mesurable = transaction
+Un Data mart/Magasin de données: sous-ensemble d'un data warehouse, destiné à un service spécifique (ex: marketing, finance)
+
+**Synonymes**:
+* Sujet = Theme
+* Dimension = Axe d'analyse = Contexte = Le qui, quoi, quand, où
+* Fait = événement mesurable = transaction
 
 # Chaîne décisionnelle
 
 1. Collecte des données: extraction depuis des bases de données ou des fichiers plats (CSV, XML, ASCII, etc.).
 2. ETL:
    - Extraction: récupération des données
-   - Transformation: nettoyage, validation, formatage, suppression des doublons et valeurs aberrantes
+   - Transformation: filtrer, trier, homogénéiser, nettoyer, valider, suppression des doublons et valeurs aberrantes
    - Chargement/Intégration des données dans l'entrepôt
 3. Stockage: choisir manière de stocker la donnée: schéma en étoile, schéma en flocon
 4. Analyse multidimensionnelle: structurer les données selon plusieurs axes, pour faciliter l'exploration et l'analyse (ex: la technologie analytique "Cube OLAP")
