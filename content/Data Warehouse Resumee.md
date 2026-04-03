@@ -7,10 +7,42 @@ publish: true
 
 # Vocabulaire associé
 
-* OLAP ≃ Décisionnel ≃ Analytique ≃ Multidimensionnel ≃ Orienté sujets ≃ Accessible aux non-développeurs 
-* OLTP ≃ Opérationnel ≃ Transactionnel ≃ Relationnel ≃ Orienté applications ≃ Utilisé par les développeurs
-* Dimension ≃ axe d’analyse ≃ context ≃ le qui / quoi / quand / où
-* Fait ≃ événement mesurable ≃ transaction
+* OLAP
+    * Analytique / Multidimensionnel / Orienté sujets
+    * Utilisé sur le domaine d'informatique décisionnelle et de Business Intelligence (BI)
+    * Utilisé par les analystes, décideurs et managers
+    * Utilisé sur les DSS – Decision Support System
+    * Caractérisé par
+        * Collection et consolidation des données
+        * Chargement périodique des données
+        * Données généralement non modifiées
+        * Interrogations non régulières (ad hoc)
+
+* OLTP
+    * Transactionnel / Opérationnel / Orienté applications
+    * Utilisé sur l’informatique de production
+    * Utilisé sur les systèmes opérationnels
+    * Utilisé par les développeurs et leurs applications
+    * Basé sur des SGBD relationnels (Oracle, SQL, etc.)
+    * Caractérisé par
+        * Données détaillées
+        * Données distribuées et hétérogènes
+        * Modifications fréquentes (INSERT, UPDATE, DELETE)
+        * Transactions répétitives et planifiées
+        * cohérence / intégrité des données
+        * Accès concurrent et en temps réel
+        * Données volatiles (évoluent rapidement)
+
+* Dimension / axe d’analyse / contexte / le qui, quoi, quand, où
+* Fait / événement mesurable / transaction
+
+# Chaîne décisionnelle
+
+1. Collection des données
+2. ETL - Extract, Transform, Load
+3. Stockage
+4. Analyse
+5. Restitution
 
 # Structure d'un entrepôt de données
 
