@@ -2,7 +2,7 @@
 publish: true
 ---
 
-> [!WARN]
+> [!WARNING]
 > Résumée incomplet
 
 # Vocabulaire associé
