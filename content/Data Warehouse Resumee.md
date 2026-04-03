@@ -16,9 +16,9 @@ publish: true
 
 Un entrepôt de données est organisé autour de deux concepts principaux: ==les dimensions== et ==les faits==.  Ces éléments sont stockés respectivement dans des **tables de dimensions** et des **tables de faits**.
 
-Une **dimension** représente un un sujet , par exemple: une personne, un produit, une date, etc.
+### Exemple: Dimension Person et Product
 
-### Exemple : Dimension PERSON
+Une **dimension** représente un un sujet, par exemple: une personne, un produit, une date, etc.
 
 | 🔑 id | name  | birth date |
 | ----- | ----- | ---------- |
@@ -27,7 +27,6 @@ Une **dimension** représente un un sujet , par exemple: une personne, un produi
 | 2     | Ali   | 08/01/1994 |
 | …     | …     | …          |
 
-### Exemple : Dimension PRODUCT
 
 | 🔑 id | name          |
 | ----- | ------------- |
@@ -36,7 +35,8 @@ Une **dimension** représente un un sujet , par exemple: une personne, un produi
 | 2     | PS4           |
 | …     | …             |
 
----
+
+### Exemple: Table de faits
 
 Un fait est un couple qui contient:
 
@@ -49,14 +49,18 @@ Un fait est un couple qui contient:
    - Quantité achetée
    - Montant payé
 
-### Exemple : Table de faits ACHAT
+Donc, pour l'évènement d'achat:
+- Dimension: person🔗, product🔗
+- Mesures: nombre, coût
 
-| ACHAT | person🔗 | product🔗 | nombre | coût |
-| ----- | -------- | --------- | ------ | ---- |
-|       | 2        | 0         | 1      | 1000 |
-|       | 0        | 1         | 2      | 1200 |
-|       | …        | …         | …      | …    |
+
+| person🔗 | product🔗 | nombre | coût |
+| -------- | --------- | ------ | ---- |
+| 2        | 0         | 1      | 1000 |
+| 0        | 1         | 2      | 1200 |
+| …        | …         | …      | …    |
 
 Cette table contient les faits:
 - ==Ali== (person 2) a acheté ==x1== ==Dell Laptop== (product 0) et a payé ==1000 dt==
 - ==John== (person 0)a acheté ==x2== ==Samsung Phones== (product 1) et a payé ==1200 dt==
+
