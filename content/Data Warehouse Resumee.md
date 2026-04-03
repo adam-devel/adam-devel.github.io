@@ -5,44 +5,51 @@ publish: true
 > [!WARNING]
 > Résumée incomplet
 
-# Vocabulaire et définitions
+# Informatique décisionnelle et Business Intelligence (BI)
 
-* OLAP - On Line Analytical Processing
-    * Analytique / Multidimensionnel / Orienté sujets
-    * Utilisé par les analystes, décideurs et managers
-    * Utilisé sur les DSS – Decision Support System
-    * Caractérisé par
-        * Collection et consolidation des données
-        * Chargement périodique des données
-        * Données généralement non modifiées
-        * Interrogations non régulières (ad hoc)
+OLAP (On Line Analytical Processing) offre accès ==rapide==, ==consistant== et ==interactif== aux informations ==transformées== pour refléter la réalité de l’entreprise
 
-* OLTP - On Line Transactional Processing
-    * Transactionnel / Opérationnel / Orienté applications
-    * Utilisé sur l'informatique de production
-    * Utilisé sur les systèmes opérationnels
-    * Utilisé par les développeurs et leurs applications
-    * Basé sur des SGBD relationnels (Oracle, SQL, etc.)
-    * Caractérisé par
-        * Données détaillées
-        * Données distribuées et hétérogènes
-        * Modifications fréquentes (INSERT, UPDATE, DELETE)
-        * Transactions répétitives et planifiées
-        * Cohérence / intégrité des données
-        * Accès concurrent et en temps réel
-        * Données volatiles (évoluent rapidement)
+* Données agrégées/résumées
+* Données non volatiles/historisée
+* Données orienté sujets
+* Pas de mise à jour: les données sont uniquement consultées
+* Requêtes complexes/analytiques
+* Utilisé par les analystes, décideurs et managers
+* Collection et consolidation des données
+* Données se chargent périodiquement
+* Interrogations non régulières (ad hoc)
 
-### SID et BI
+* Analytique / Multidimensionnel
+* Utilisé sur les DSS – Decision Support System
+* Caractérisé par
 
-* **Data mining**: utilisation des technologies analytiques pour déceler des tendances dans des données volumineuses
-* **Reporting**: synthèse des informations sur une période donnée, destiné aux directeurs de services, offrant une vue d'ensemble de l'activité
-* **Tableau de bord**: présente les indicateurs de performance clés (KPI) à travers une série de graphiques
+OLTP (On Line Transactional Processing) offre traitement des données ==opérationnelles==
+
+* Transactionnel / Opérationnel / Orienté applications
+* Utilisé sur l'informatique de production
+* Utilisé sur les systèmes opérationnels
+* Utilisé par les développeurs et leurs applications
+* Basé sur des SGBD relationnels (Oracle, SQL, etc.)
+* Caractérisé par
+    * Données détaillées
+    * Données distribuées et hétérogènes
+    * Modifications fréquentes (INSERT, UPDATE, DELETE)
+    * Transactions répétitives et planifiées
+    * Cohérence / intégrité des données
+    * Accès concurrent et en temps réel
+
+* Data mining: utilisation des technologies analytiques pour déceler des tendances dans des données volumineuses
+* Reporting: synthèse des informations sur une période donnée, destiné aux directeurs de services, offrant une vue d'ensemble de l'activité
+* Tableau de bord: présente les indicateurs de performance clés (KPI) à travers une série de graphiques
     * Indicateurs essentiels en temps réel pour piloter
     * Destiné aux équipes métier et leurs responsables
 
-## Entrepôt de données (Data Warehouse)
+# Entrepôt de données (Data Warehouse)
 
-* Un entrepôt de données est une BD à des fins d'analyse
+Un entrepôt de données est collection de données orientées sujet, intégrées, non volatiles et historisées
+
+* Data mart/Magasin de données: sous-ensemble d'un data warehouse, destiné à un service spécifique (ex: marketing, finance)
+* **Sujet** = Theme
 * **Dimension** = Axe d'analyse = Contexte = Le qui, quoi, quand, où
 * **Fait** = événement mesurable = transaction
 
@@ -52,7 +59,7 @@ publish: true
 2. ETL:
    - Extraction: récupération des données
    - Transformation: nettoyage, validation, formatage, suppression des doublons et valeurs aberrantes
-   - Chargement: intégration des données dans l'entrepôt
+   - Chargement/Intégration des données dans l'entrepôt
 3. Stockage: choisir manière de stocker la donnée: schéma en étoile, schéma en flocon
 4. Analyse multidimensionnelle: structurer les données selon plusieurs axes, pour faciliter l'exploration et l'analyse (ex: la technologie analytique "Cube OLAP")
 5. Restitution: visualisation et exploitation des données via rapports et tableaux de bord.
