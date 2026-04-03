@@ -155,3 +155,12 @@ Cette table contient les faits:
 * non-additive ...
 
 # Dimensions
+
+* Un paramètre est un attribut qui décrit le sujet
+* Un attribut faible est un attribut qui ne décrit pas le sujet, mais qui est présent pour l'analyse.
+* Les paramètres peuvent être dans un hierarchy, auquel cas ils sont appelés niveaux
+* Dans un hierarchy, les paramètres organisés au degré de détail: de plus générale a plus fin 
+* Membre: une valeur distincte d'un niveau
+
+On Écrit: `Dimension.Level1.Level2.Level3....LevelN.Member`
+
