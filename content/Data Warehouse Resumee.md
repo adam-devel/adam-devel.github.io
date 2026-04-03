@@ -58,5 +58,6 @@ Un fait est un couple qui contient:
 |       | 0        | 1         | 2      | 1200 |
 |       | …        | …         | …      | …    |
 
+Cette table contient les faits:
 - ==Ali== (person 2) a acheté ==x1== ==Dell Laptop== (product 0) et a payé ==1000 dt==
 - ==John== (person 0)a acheté ==x2== ==Samsung Phones== (product 1) et a payé ==1200 dt==
