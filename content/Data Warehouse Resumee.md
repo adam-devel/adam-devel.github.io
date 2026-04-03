@@ -5,7 +5,21 @@ publish: true
 > [!WARNING]
 > Résumée incomplet
 
-# Informatique décisionnelle et Business Intelligence (BI)
+# Informatique de production
+
+OLTP (On Line Transactional Processing) offre traitement des données ==opérationnelles==
+
+- Données Exhaustives / Détaillé
+- Données volatiles / modifications fréquentes
+- Données orientées application
+- Mise à jour des donnée
+- Requêtes simple
+* Transactions répétitives et planifiées
+* Accès concurrent et en temps réel
+
+=> Transactionnel / Opérationnel / Orienté applications
+
+# Informatique décisionnelle
 
 OLAP (On Line Analytical Processing) offre accès ==rapide==, ==consistant== et ==interactif== aux informations ==transformées== pour refléter la réalité de l’entreprise
 
@@ -19,27 +33,14 @@ OLAP (On Line Analytical Processing) offre accès ==rapide==, ==consistant== et 
 * Données se chargent périodiquement
 * Interrogations non régulières (ad hoc)
 
-* Analytique / Multidimensionnel
-* Utilisé sur les DSS – Decision Support System
-* Caractérisé par
+=> Analytique / Multidimensionnel
+* Utilisé par les DSS – Decision Support System
 
-OLTP (On Line Transactional Processing) offre traitement des données ==opérationnelles==
-
-* Transactionnel / Opérationnel / Orienté applications
-* Utilisé sur l'informatique de production
-* Utilisé sur les systèmes opérationnels
-* Utilisé par les développeurs et leurs applications
-* Basé sur des SGBD relationnels (Oracle, SQL, etc.)
-* Caractérisé par
-    * Données détaillées
-    * Données distribuées et hétérogènes
-    * Modifications fréquentes (INSERT, UPDATE, DELETE)
-    * Transactions répétitives et planifiées
-    * Cohérence / intégrité des données
-    * Accès concurrent et en temps réel
-
+# Business Intelligence (BI)
 * Data mining: utilisation des technologies analytiques pour déceler des tendances dans des données volumineuses
+
 * Reporting: synthèse des informations sur une période donnée, destiné aux directeurs de services, offrant une vue d'ensemble de l'activité
+
 * Tableau de bord: présente les indicateurs de performance clés (KPI) à travers une série de graphiques
     * Indicateurs essentiels en temps réel pour piloter
     * Destiné aux équipes métier et leurs responsables
