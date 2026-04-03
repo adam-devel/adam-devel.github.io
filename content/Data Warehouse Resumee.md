@@ -14,8 +14,7 @@ publish: true
 
 # Structure d'un entrepôt de données
 
-Un entrepôt de données est organisé autour de deux concepts principaux: ==les dimensions== et ==les faits==.  
-Ces éléments sont stockés respectivement dans des **tables de dimensions** et des **tables de faits**.
+Un entrepôt de données est organisé autour de deux concepts principaux: ==les dimensions== et ==les faits==.  Ces éléments sont stockés respectivement dans des **tables de dimensions** et des **tables de faits**.
 
 Une **dimension** représente un un sujet , par exemple: une personne, un produit, une date, etc.
 
